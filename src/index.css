@@ -1,0 +1,40 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;900&family=JetBrains+Mono:wght@400;500;700&display=swap');
+
+@theme {
+  --color-brand-red: #BBFF00;
+  --color-brand-red-hover: #99cc00;
+  --color-surface-base: #0A0A0A;
+  --color-surface-glass: transparent;
+  --color-surface-glass-hover: rgba(255, 255, 255, 0.02);
+  --color-surface-border: rgba(255, 255, 255, 0.2);
+  --color-surface-border-hover: #BBFF00;
+  
+  --font-sans: 'Inter', sans-serif;
+  --font-display: 'Inter', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+}
+
+@layer base {
+  body {
+    background-color: var(--color-surface-base);
+    color: #F0F0F0;
+    -webkit-font-smoothing: antialiased;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+    color: #ffffff;
+  }
+}
+
+.glass-panel {
+  background: var(--color-surface-glass);
+  border: 1px solid var(--color-surface-border);
+  transition: all 0.3s ease;
+}
+
+.glass-panel:hover {
+  background: var(--color-surface-glass-hover);
+  border-color: var(--color-surface-border-hover);
+}
