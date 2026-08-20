@@ -68,7 +68,7 @@ export default function App() {
             <div className="block lg:hidden relative w-full max-w-[280px] sm:max-w-xs mx-auto mb-10">
               <div className="aspect-square glass-panel p-2 rounded-3xl border border-white/5 shadow-2xl bg-black/20">
                 <img 
-                  src="/WhatsApp%20Image%202026-08-20%20at%2016.32.25.jpeg" 
+                  src="/profile.png" 
                   alt="Anirban Roy" 
                   className="rounded-2xl w-full h-full object-cover transition-transform duration-500 hover:scale-[1.02]" 
                 />
@@ -103,7 +103,7 @@ export default function App() {
           <div className="hidden lg:block relative lg:ml-auto w-full max-w-[400px]">
             <div className="aspect-square glass-panel p-3 rounded-3xl border border-white/5 shadow-2xl bg-black/20">
               <img 
-                src="/WhatsApp%20Image%202026-08-20%20at%2016.32.25.jpeg" 
+                src="/profile.png" 
                 alt="Anirban Roy" 
                 className="rounded-[20px] w-full h-full object-cover transition-transform duration-500 hover:scale-[1.02]" 
               />
@@ -251,7 +251,7 @@ export default function App() {
           </div>
         </motion.section>
 
-        {/* Certificates & Activities */}
+        {/* Certificates & Achievements */}
         <motion.section 
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -261,10 +261,7 @@ export default function App() {
           className="px-4 md:px-6 max-w-[1200px] mx-auto mb-20 md:mb-32 overflow-hidden"
         >
           <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-8 md:mb-10">
-            <div className="space-y-2">
-              <h3 className="text-2xl md:text-3xl font-black text-[#F0F0F0] tracking-tighter uppercase break-words">Certificates & Activities</h3>
-              <p className="text-gray-400 font-medium text-sm sm:text-base">Recognition of learning, participation and extracurricular involvement</p>
-            </div>
+            <h3 className="text-2xl md:text-3xl font-black text-[#F0F0F0] tracking-tighter uppercase break-words">Certificates & Achievements</h3>
           </div>
           
           <div className="grid md:grid-cols-2 gap-6">
@@ -272,31 +269,28 @@ export default function App() {
             <div className="glass-panel rounded-none overflow-hidden group flex flex-col">
               <div className="aspect-[4/3] bg-[#000] relative overflow-hidden border-b border-surface-border">
                 <img 
-                  src="/WhatsApp%20Image%202026-08-20%20at%2017.43.29.jpeg" 
-                  alt="Google Student Ambassador Program 2026" 
+                  src="/certificates/google-music-night.jpeg" 
+                  alt="Google Student Ambassador Program - Music Night Edition" 
                   className="w-full h-full object-contain p-2 md:p-4 group-hover:scale-105 transition-transform duration-700" 
                 />
               </div>
               <div className="p-6 sm:p-8 flex flex-col flex-1">
                 <div className="mb-4">
                   <span className="text-[10px] font-bold tracking-[0.2em] uppercase text-brand-red mb-2 block">Certificate of Participation</span>
-                  <h4 className="text-xl md:text-2xl font-black text-[#F0F0F0] tracking-tighter uppercase break-words leading-tight">Google Student Ambassador Program 2026 — Music Night Edition</h4>
+                  <h4 className="text-xl md:text-2xl font-black text-[#F0F0F0] tracking-tighter uppercase break-words leading-tight">Google Student Ambassador Program - Music Night Edition</h4>
                 </div>
                 
                 <p className="text-gray-400 text-sm leading-relaxed font-medium mb-6">
-                  Actively participated in Music Night organized under the Google Student Ambassador Program 2026 and showcased creativity and enthusiasm.
+                  Certificate of Participation for actively participating in Music Night organized under Google Student Ambassador Program 2026.
                 </p>
                 
                 <div className="mt-auto">
-                  <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
-                    <span className="text-[10px] font-mono font-bold tracking-[0.2em] text-gray-500 uppercase">12 June 2026</span>
-                    <button 
-                      onClick={() => setSelectedCertificate("/WhatsApp%20Image%202026-08-20%20at%2017.43.29.jpeg")}
-                      className="text-[#0A0A0A] bg-[#F0F0F0] hover:bg-white px-4 py-3 text-[10px] font-bold tracking-[0.2em] uppercase transition-colors inline-flex items-center justify-center gap-2 rounded-none"
-                    >
-                      <ExternalLink size={14} /> View Certificate
-                    </button>
-                  </div>
+                  <button 
+                    onClick={() => setSelectedCertificate("/certificates/google-music-night.jpeg")}
+                    className="text-[#0A0A0A] bg-[#F0F0F0] hover:bg-white px-4 py-3 text-[10px] font-bold tracking-[0.2em] uppercase transition-colors inline-flex items-center justify-center gap-2 rounded-none"
+                  >
+                    <ExternalLink size={14} /> View Certificate
+                  </button>
                 </div>
               </div>
             </div>
@@ -305,55 +299,28 @@ export default function App() {
             <div className="glass-panel rounded-none overflow-hidden group flex flex-col">
               <div className="aspect-[4/3] bg-[#000] relative overflow-hidden border-b border-surface-border">
                 <img 
-                  src="/WhatsApp%20Image%202026-08-20%20at%2017.43.39.jpeg" 
-                  alt="Virtual Internship — Sustainable Development" 
+                  src="/certificates/techno-billion-ai.jpeg" 
+                  alt="Sustainable Development, Innovation & Entrepreneurship Internship" 
                   className="w-full h-full object-contain p-2 md:p-4 group-hover:scale-105 transition-transform duration-700" 
                 />
               </div>
               <div className="p-6 sm:p-8 flex flex-col flex-1">
                 <div className="mb-4">
                   <span className="text-[10px] font-bold tracking-[0.2em] uppercase text-brand-red mb-2 block">Techno Billion AI</span>
-                  <h4 className="text-xl md:text-2xl font-black text-[#F0F0F0] tracking-tighter uppercase break-words leading-tight">Virtual Internship — Sustainable Development, Innovation & Entrepreneurship</h4>
+                  <h4 className="text-xl md:text-2xl font-black text-[#F0F0F0] tracking-tighter uppercase break-words leading-tight">Sustainable Development, Innovation & Entrepreneurship Internship</h4>
                 </div>
                 
                 <p className="text-gray-400 text-sm leading-relaxed font-medium mb-6">
-                  Completed a virtual internship demonstrating consistent learning, active participation and understanding of the concepts covered.
+                  Virtual Internship Certificate with Grade A from Techno Billion AI.
                 </p>
                 
                 <div className="mt-auto">
-                  <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
-                    <div className="flex flex-col gap-1">
-                      <span className="text-[10px] font-mono font-bold tracking-[0.2em] text-gray-500 uppercase">Grade A</span>
-                      <span className="text-[10px] font-mono font-bold tracking-[0.2em] text-gray-500 uppercase">1 March 2026</span>
-                    </div>
-                    <button 
-                      onClick={() => setSelectedCertificate("/WhatsApp%20Image%202026-08-20%20at%2017.43.39.jpeg")}
-                      className="text-[#0A0A0A] bg-[#F0F0F0] hover:bg-white px-4 py-3 text-[10px] font-bold tracking-[0.2em] uppercase transition-colors inline-flex items-center justify-center gap-2 rounded-none"
-                    >
-                      <ExternalLink size={14} /> View Certificate
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="mt-12 sm:mt-16">
-            <h4 className="text-xl md:text-2xl font-black text-[#F0F0F0] tracking-tighter uppercase mb-6">Activities & Participation</h4>
-            <div className="glass-panel p-6 sm:p-8 rounded-none relative overflow-hidden group flex flex-col border border-white/5 bg-black/20">
-              <div className="relative z-10 border-l border-surface-border pl-6 sm:pl-8 ml-2">
-                <div className="absolute w-2 h-2 bg-brand-red -left-[4.5px] top-1.5 rounded-none shadow-[0_0_10px_rgba(255,51,51,0.5)]"></div>
-                <h5 className="text-[#F0F0F0] font-bold text-sm sm:text-base tracking-wide uppercase mb-1">
-                  Music Night Edition
-                </h5>
-                <p className="text-brand-red font-bold text-[10px] tracking-[0.2em] uppercase mb-2">
-                  Google Student Ambassador Program 2026
-                </p>
-                <p className="text-gray-400 font-medium text-sm mb-4">
-                  Certificate of Participation
-                </p>
-                <div className="inline-block bg-surface-glass border border-surface-border px-3 py-1 text-[10px] font-mono font-bold tracking-[0.2em] text-gray-400 uppercase">
-                  12 June 2026
+                  <button 
+                    onClick={() => setSelectedCertificate("/certificates/techno-billion-ai.jpeg")}
+                    className="text-[#0A0A0A] bg-[#F0F0F0] hover:bg-white px-4 py-3 text-[10px] font-bold tracking-[0.2em] uppercase transition-colors inline-flex items-center justify-center gap-2 rounded-none"
+                  >
+                    <ExternalLink size={14} /> View Certificate
+                  </button>
                 </div>
               </div>
             </div>
